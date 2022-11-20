@@ -36,10 +36,8 @@ function App() {
 function Foodcart(props){
     return(
         <div className='border-2 border-purple-400 bg-purple-600 text-white p-5 rounded'>
-            <div className='flex justify-between'>
-             <h2 className='text-2xl font-bold'>{props.name}</h2> 
-             <button className='bg-red-600 p-2 rounded shadow hover:bg-white hover:text-black'>Delete</button>
-            </div>
+            <h2 className='text-2xl font-bold'>{props.name}-{(props.cal>150)?'Unhealthy':'Normal'}</h2> 
+            {/* <!--Conditional rendering--> */}
             <hr/>
             <h5>you have consumed {props.cal} cals today</h5>
         </div>
