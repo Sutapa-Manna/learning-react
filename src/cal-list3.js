@@ -16,7 +16,7 @@ function App() {
     }
   return (
    <>
-   <div className='text-center p-5 pb-10'>
+   <div className='text-center p-5 pb-10 bg-red-50'>
         <h2 className='font-bold text-3xl uppercase underline'>Instruction</h2>
         <ul className='text-blue-500 mt-10'>
             <li>build a container</li>
